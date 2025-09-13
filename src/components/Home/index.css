@@ -96,3 +96,10 @@ h2{
     align-self: center;
   }
 }
+
+.arr-btn{
+    border:none;
+    outline:none;
+    background-color: transparent;
+    cursor: pointer;
+}

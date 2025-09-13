@@ -1,70 +1,77 @@
-# Getting Started with Create React App
+# 🍽️ Party Menu Selection App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A ReactJS application that allows users to select dishes for a party menu from categorized tabs and cuisines.  
+This project was built as part of an assignment to demonstrate **UI design skills, logical thinking, and ReactJS fundamentals**.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## 🚀 Features
 
-### `npm start`
+- **Meal Categories (Tabs)**  
+  Four meal types displayed as tabs: `Starter`, `Main Course`, `Dessert`, and `Sides`.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **Cuisine Categories**  
+  Dishes are grouped under **cuisines**:
+  - North Indian  
+  - South Indian  
+  - Chinese  
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- **Dish List**  
+  - Dish Name, Short Description, and Image displayed in a card layout  
+  - `Add / Remove` button to toggle dish selection  
+  - `Ingredient` button navigates to an ingredient details screen  
+  - Cuisine type is shown with each dish card (e.g., *North Indian*).  
 
-### `npm test`
+- **Search Functionality**  
+  - Case-insensitive search by dish name  
+  - Search works only within the selected category  
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- **Veg / Non-Veg Filters**  
+  - Independent toggle filters  
+  - Updates dish list immediately  
 
-### `npm run build`
+- **Dish Selection Summary**  
+  - Count of selected dishes shown in each tab  
+  - Footer shows total selected dishes and a **Continue** button (static)  
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- **Ingredient Screen**  
+  - Navigates to a new page with **dummy dish data** (as per assignment requirement)  
+  - Displays dish name, description, and a sample ingredient list  
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+---
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## 🛠️ Tech Stack
 
-### `npm run eject`
+- **ReactJS** (functional components + hooks)
+- **React Router DOM** (navigation)
+- **Mock JSON data** for dishes & ingredients (with cuisines included)
+- **CSS Modules** for styling
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+---
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## 📂 Project Structure
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+src/
+├── components/
+│ ├── Home.js  # Main container with cuisines + dishes
+│ ├── DishCard.js # Card layout for individual dish
+│ ├── DishList.js  # Renders list of dishes under cuisine
+│ ├── Filters.js  # Tabs, search, and veg/non-veg filters
+│ ├── IngredientModal.js # Ingredient screen (navigated route)
+│ └── Modal.js # Dish details modal
+├── data/
+│ └── mockDishes.js # Mock data with cuisines (North, South, Chinese)
+├── images/ # Dish and UI icons
+├── App.js # Routes (Home + Ingredients)
+└── index.js # Entry point
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## 🚀 Quick Start
 
-## Learn More
+# Go to project folder
+cd party-menu-app
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+# Install dependencies
+npm install
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+# Start the development server
+npm start

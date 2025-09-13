@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap");
+
+* {
+  font-family: "Open Sans";
+}
+
+.dish-card-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 25px;
+  border-bottom: 1px solid #f0f0f0;
+  padding-bottom: 20px;
+}
+
+.details-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.name-icon-container {
+  display: flex;
+  align-items: center;
+}
+
+h1 {
+  font-weight: 700;
+  color: #1c1c1c;
+  font-size: 14px;
+  margin-right: 10px;
+}
+.name-icon-container img {
+  height: 14px;
+  width: 14px;
+}
+
+p {
+  font-weight: 500;
+  font-size: 12px;
+  color: #7e7e7e;
+  margin-top: 10px;
+}
+
+span {
+  font-weight: 600;
+  color: #1c1c1c;
+  font-size: 12px;
+}
+
+.ingredient-container {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.ingredient-container img {
+  width: 18px;
+  height: 18px;
+  margin-right: 10px;
+}
+
+.image-container {
+  position: relative;
+  display: inline-block;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.image-container img {
+  display: block;
+  width: 100px;
+  height: 100px;
+}
+
+.add-btn {
+  position: absolute;
+  left: 25%;
+  bottom: -5px;
+  background-color: #ffffff;
+  border-radius: 6px;
+  padding-left: 8px;
+  padding-top: 6px;
+  padding-right: 8px;
+  padding-bottom: 6px;
+  color: #73ae78;
+  font-size: 14px;
+  font-weight: 700;
+  border: none;
+  outline: none;
+  transition: background 0.2s ease;
+  cursor: pointer;
+}
+
+.add-btn:hover {
+  background-color: red;
+}
+
+.remove-btn {
+  position: absolute;
+  left: 25%;
+  bottom: -5px;
+  background-color: #ffffff;
+  border-radius: 6px;
+  padding-left: 8px;
+  padding-top: 6px;
+  padding-right: 8px;
+  padding-bottom: 6px;
+  color: #ff941a;
+  font-size: 14px;
+  font-weight: 700;
+  border: none;
+  outline: none;
+  transition: background 0.2s ease;
+  cursor: pointer;
+}
+
+.ing-btn {
+  font-weight: 700;
+  font-size: 12px;
+  color: #ff8800;
+  background-color: transparent;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+.read-btn{
+    cursor: pointer;
+}
