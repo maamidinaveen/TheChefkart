@@ -100,13 +100,13 @@ const Filters = (props) => {
           )
         </h3>
         <div className="toggles">
-          {/* Veg Toggle */}
+        
           <label className="checkbox-container">
             <input type="checkbox" checked={vegOnly} onChange={onClickVeg} />
             <span className="checkmark veg"></span>
           </label>
 
-          {/* Non-Veg Toggle */}
+        
           <label className="checkbox-container">
             <input
               type="checkbox"

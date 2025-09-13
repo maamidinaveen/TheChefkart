@@ -14,7 +14,7 @@
   background: rgba(0, 0, 0, 0.5);
   display: flex;
   justify-content: center;
-  align-items: flex-end; /* bottom sheet */
+  align-items: flex-end; 
   z-index: 1000;
 }
 
@@ -46,13 +46,13 @@
 
 @media (min-width: 768px) {
   .modal-overlay {
-    align-items: flex-end; /* center vertically */
+    align-items: flex-end; 
   }
 
   .modal-content {
     width: 100%;
-    max-width: 600px; /* match app-container */
-    border-radius: 12px; /* all corners rounded */
+    max-width: 600px; 
+    border-radius: 12px;
     animation: fadeInScale 0.3s ease;
   }
 

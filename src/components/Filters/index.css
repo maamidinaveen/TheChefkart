@@ -25,12 +25,12 @@
 .search-icon {
   width: 20px;
   height: 20px;
-  flex-shrink: 0; /* don’t let icons shrink */
+  flex-shrink: 0; 
 }
 
 
 .input-search {
-  flex: 1;                /* input grows to fill space */
+  flex: 1;              
   border: none;
   outline: none;
   font-family: "Open Sans", sans-serif;
@@ -114,25 +114,23 @@ h3{
   gap: 16px;
 }
 
-/* Hide default checkbox */
+
 .checkbox-container input {
   display: none;
 }
 
-/* Outer pill (default OFF state) */
 .checkmark {
   display: inline-block;
   width: 50px;
   height: 28px;
   border-radius: 20px;
-  background: #f5f5f5; /* light gray */
+  background: #f5f5f5; 
   border: 2px solid #ddd;
   position: relative;
   cursor: pointer;
   transition: background 0.3s, border-color 0.3s;
 }
 
-/* Sliding dot */
 .checkmark::before {
   content: "";
   position: absolute;
@@ -146,29 +144,27 @@ h3{
   transition: transform 0.3s ease;
 }
 
-/* Veg dot */
+
 .checkmark.veg::before {
-  background-image: url("../../images/veg_icon.svg"); /* green dot */
+  background-image: url("../../images/veg_icon.svg"); 
 }
 
-/* Non-Veg dot */
+
 .checkmark.nonveg::before {
-  background-image: url("../../images/non_veg_icon.svg"); /* red dot */
+  background-image: url("../../images/non_veg_icon.svg"); 
 }
 
-/* Checked → slide dot */
 .checkbox-container input:checked + .checkmark::before {
-  transform: translateX(22px); /* move right */
+  transform: translateX(22px);
 }
 
-/* Veg background ON */
 .checkbox-container input:checked + .checkmark.veg {
-  background: #e6f7ec; /* light green */
+  background: #e6f7ec;
   border-color: #3aa655;
 }
 
-/* Non-Veg background ON */
+
 .checkbox-container input:checked + .checkmark.nonveg {
-  background: #fdeaea; /* light red */
+  background: #fdeaea; 
   border-color: #d9534f;
 }
